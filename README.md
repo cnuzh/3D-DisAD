@@ -11,7 +11,7 @@
 
 ## Description
 
-What it does
+This repo is the official implementation of our method "3D-GAD"
 
 ## Installation
 
