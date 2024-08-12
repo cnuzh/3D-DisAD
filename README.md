@@ -48,11 +48,11 @@ conda activate myenv
 ```
 ## Data 
 
-Data used in this study were from three public and one private datasets. The ADNI,
-AIBL and OASIS datasets are publicly available (ADNI: www.adni-info.org, AIBL:
-aibl.csiro.au/adni/index.html, OASIS-3: www.oasis-brains.org/#access). After registering and complying with the data usage agreement, applicants submit an application573
-to the relevant committee. Once approved, they can use the data. The Qilu dataset is not available for public download, but access can be requested through the corresponding author xx (@sdu.edu.cn). Requests for raw and analyzed data will be promptly
-reviewed by the Shandong University ethics committee to verify whether the request is subject to any intellectual property or confidentiality obligations.
+The data used in this study includes three public datasets. To access these datasets, you will need to register and submit a request on their respective websites.
+1. ADNI：www.adni-info.org
+2. AIBL: aibl.csiro.au/adni/index.html
+3. OASIS-3: www.oasis-brains.org/#access)
+After obtaining the data, you will need to preprocess the datasets according to the methods described in our paper.
 
 ## How to run
 
