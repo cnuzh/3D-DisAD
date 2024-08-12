@@ -1,7 +1,7 @@
 <div align="center">
 
-# ![image](https://github.com/user-attachments/assets/afe29e9c-0a8c-488c-91fb-1023f49e9403)
 
+# Heterogeneity of Neuroanatomical Subtypes within Alzheimer’s Disease
 
 
 <a href="https://pytorch.org/get-started/locally/"><img alt="PyTorch" src="https://img.shields.io/badge/PyTorch-ee4c2c?logo=pytorch&logoColor=white"></a>
@@ -71,3 +71,5 @@ Train contrastive diffusion
 ```bash
 sh ./scripts/train_contrastive_diffusion.sh
 ```
+
+# ![image](https://github.com/user-attachments/assets/afe29e9c-0a8c-488c-91fb-1023f49e9403)
