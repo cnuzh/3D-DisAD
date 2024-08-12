@@ -52,6 +52,7 @@ The data used in this study includes three public datasets. To access these data
 1. ADNI：www.adni-info.org
 2. AIBL: [aibl.csiro.au/adni/index.html](https://aibl.csiro.au/adni/index.html)
 3. OASIS-3: www.oasis-brains.org/#access
+   
 After obtaining the data, you will need to preprocess the datasets according to the methods described in our paper.
 
 ## How to run
