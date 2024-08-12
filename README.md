@@ -49,7 +49,7 @@ conda activate myenv
 ## Data 
 
 The data used in this study includes three public datasets. To access these datasets, you will need to register and submit a request on their respective websites.
-1. ADNI：www.adni-info.org
+1. ADNI: www.adni-info.org
 2. AIBL: [aibl.csiro.au/adni/index.html](https://aibl.csiro.au/adni/index.html)
 3. OASIS-3: www.oasis-brains.org/#access
    
