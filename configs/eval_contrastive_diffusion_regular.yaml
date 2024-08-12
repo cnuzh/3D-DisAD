@@ -1,0 +1,29 @@
+# @package _global_
+
+# specify here default configuration
+# order of defaults determines the order in which configs override each other
+defaults:
+  - _self_
+  - data: contrastive-diffusion-data-regular
+  - model: contrastive-diffusion-model-regular
+  - logger: null # set logger here or use command line (e.g. `python train.py logger=tensorboard`)
+  - trainer: gpu
+  - paths: default
+  - extras: default
+  - hydra: default
+
+# task name, determines output directory path
+task_name: "contrastive_diffusion_regular_eval"
+
+# tags to help you identify your experiments
+# you can overwrite this in experiment configs
+# overwrite from command line with `python train.py tags="[first_tag, second_tag]"`
+tags: [ "dev" ]
+
+# passing checkpoint path is necessary for evaluation
+ckpt_path: "/your/path/to/ckpt"
+
+model:
+  paths:
+    reference_file: "/your/path/to/reference/mri_file"
+    generate_path: /your/path/to/save/generate/mri

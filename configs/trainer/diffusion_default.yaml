@@ -1,0 +1,25 @@
+_target_: lightning.pytorch.trainer.Trainer
+
+default_root_dir: ${paths.output_dir}
+
+min_epochs: 50 # prevents early stopping
+max_epochs: 200
+
+strategy: 'ddp_find_unused_parameters_true'
+accelerator: gpu
+devices: 4
+
+# mixed precision for extra speed-up
+# precision: 16
+
+# perform a validation loop every N training epochs
+check_val_every_n_epoch: 1
+
+log_every_n_steps: 20
+
+# set True to to ensure deterministic results
+# makes training slower but gives more reproducibility than just setting seeds
+deterministic: False
+
+#gradient_clip_val: 1.0  # 设置梯度裁剪的阈值
+#gradient_clip_algorithm: 'value'

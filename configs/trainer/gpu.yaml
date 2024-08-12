@@ -1,0 +1,10 @@
+defaults:
+  - default
+
+accelerator: gpu
+devices: 1
+
+min_epochs: 10 # prevents early stopping
+max_epochs: 20
+
+#limit_test_batches: 10

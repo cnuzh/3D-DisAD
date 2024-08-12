@@ -1,0 +1,39 @@
+_target_: src.models.contrastive_regular_diffusion_module.ContrastiveDiffusionRegularLitModule
+
+optimizer:
+  _target_: torch.optim.Adam
+  _partial_: true
+  lr: 0.0001
+  weight_decay: 0.0
+
+scheduler:
+  _target_: torch.optim.lr_scheduler.ConstantLR
+  _partial_: true
+  factor: 1.0
+  total_iters: 100
+
+diffusion_model:
+  _target_: generative.networks.nets.shift_unet.ShiftUNetModel
+  spatial_dims: 3
+  in_channels: 1
+  out_channels: 1
+  num_channels: [ 32, 64, 128 ]
+  attention_levels: [ False, False, True ]
+  use_scale_shift_norm: True
+  resblock_updown: False
+  num_head_channels: [ 0, 0, 128 ]
+  num_res_blocks: 2
+
+  with_shift: false
+  latent_dims: None
+  ddpm_path: None
+
+diffusion_scheduler:
+  _target_: generative.networks.schedulers.DDPMScheduler
+  num_train_timesteps: 1000
+  schedule: "scaled_linear_beta"
+  beta_start: 0.0005
+  beta_end: 0.0195
+
+# compile model for faster training with pytorch 2.0
+compile: false

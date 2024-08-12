@@ -1,0 +1,72 @@
+_target_: src.models.contrastive_diffusion_module.ContrastiveDiffusionLitModule
+
+optimizer:
+  _target_: torch.optim.Adam
+  _partial_: true
+  lr: 0.0001
+  weight_decay: 0.0
+
+scheduler:
+  _target_: torch.optim.lr_scheduler.ReduceLROnPlateau
+  _partial_: true
+  mode: min
+  factor: 0.1
+  patience: 15
+
+share_encoder:
+  _target_: src.models.components.contrastive_ve.ContrastiveVE
+  spatial_dims: 3
+  in_channels: 1
+  feature_size: 64
+  num_channels: [ 64, 128 ]
+  latent_channels: 16
+
+salient_encoder:
+  _target_: src.models.components.contrastive_ve.ContrastiveVE
+  spatial_dims: 3
+  in_channels: 1
+  feature_size: 64
+  num_channels: [ 64, 128 ]
+  latent_channels: 16
+
+discriminator:
+  _target_: torch.nn.Sequential
+  _args_:
+    - _target_: torch.nn.Linear
+      in_features: 32
+      out_features: 1
+    - _target_: torch.nn.Sigmoid
+
+decoder:
+  _target_: src.models.components.contrastive_decoder.ContrastiveDecoder
+  spatial_dims: 3
+  feature_size: 64
+  num_channels: [ 64, 128 ]
+  decode_num_channels: [32, 16]
+  latent_channels: 32
+
+diffusion_model:
+  _target_: generative.networks.nets.shift_unet.ShiftUNetModel
+  spatial_dims: 3
+  in_channels: 1
+  out_channels: 1
+  num_channels: [ 32, 64, 128 ]
+  attention_levels: [ False, False, True ]
+  use_scale_shift_norm: True
+  resblock_updown: False
+  num_head_channels: [ 0, 0, 128 ]
+  num_res_blocks: 2
+
+  with_shift: true
+  latent_dims: 16
+  ddpm_path: "your/path/to/ddpm/weight" # only state_dict
+
+diffusion_scheduler:
+  _target_: generative.networks.schedulers.DDPMScheduler
+  num_train_timesteps: 1000
+  schedule: "scaled_linear_beta"
+  beta_start: 0.0005
+  beta_end: 0.0195
+
+# compile model for faster training with pytorch 2.0
+compile: false
