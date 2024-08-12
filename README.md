@@ -72,4 +72,3 @@ Train contrastive diffusion
 sh ./scripts/train_contrastive_diffusion.sh
 ```
 
-# ![image](https://github.com/user-attachments/assets/afe29e9c-0a8c-488c-91fb-1023f49e9403)
