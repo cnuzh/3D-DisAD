@@ -1,7 +1,7 @@
 <div align="center">
 
 
-# Heterogeneity of Neuroanatomical Subtypes within Alzheimer’s Disease
+# Discovering Alzheimer’s Disease Subtypes by Disentangling Neuroanatomical Heterogeneity Using AI-Based Model
 
 
 <a href="https://pytorch.org/get-started/locally/"><img alt="PyTorch" src="https://img.shields.io/badge/PyTorch-ee4c2c?logo=pytorch&logoColor=white"></a>
@@ -21,7 +21,7 @@ This repo is the official implementation of our work "3D Generative Model Reveal
 
 ```bash
 # clone project
-git clone https://github.com/YourGithubName/your-repo-name
+git clone https://github.com/cnuzh/3D-GAD
 cd your-repo-name
 
 # [OPTIONAL] create conda environment
