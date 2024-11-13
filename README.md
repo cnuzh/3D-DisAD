@@ -13,7 +13,7 @@
 
 ## Description
 
-This repo is the official implementation of our work "3D Generative Model Reveals the Heterogeneity of Neuroanatomical Subtypes within Alzheimer’s Disease"
+This repo is the official implementation of our work "Discovering Alzheimer’s Disease Subtypes by Disentangling Neuroanatomical Heterogeneity Using AI-Based Model"
 
 ## Installation
 
