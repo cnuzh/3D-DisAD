@@ -25,7 +25,7 @@ git clone https://github.com/cnuzh/3D-GAD
 cd your-repo-name
 
 # [OPTIONAL] create conda environment
-conda create -n myenv python=3.11.0
+conda create -n myenv python=3.19.0
 conda activate myenv
 
 # install pytorch according to instructions
@@ -39,7 +39,7 @@ pip install -r requirements.txt
 
 ```bash
 # clone project
-git clone https://github.com/YourGithubName/your-repo-name
+git clone https://github.com/cnuzh/3D-GAD
 cd your-repo-name
 
 # create conda environment and install dependencies
