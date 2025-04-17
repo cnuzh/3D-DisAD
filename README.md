@@ -1,7 +1,8 @@
 <div align="center">
 
 
-# Discovering Alzheimer’s Disease Subtypes by Disentangling Neuroanatomical Heterogeneity Using AI-Based Model
+# Identifying Subtypes of Alzheimer’s Disease via AI-Driven Disentanglement of Brain Heterogeneity
+
 
 
 <a href="https://pytorch.org/get-started/locally/"><img alt="PyTorch" src="https://img.shields.io/badge/PyTorch-ee4c2c?logo=pytorch&logoColor=white"></a>
