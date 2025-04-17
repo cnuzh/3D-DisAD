@@ -14,7 +14,7 @@
 
 ## Description
 
-This repo is the official implementation of our work "Discovering Alzheimer’s Disease Subtypes by Disentangling Neuroanatomical Heterogeneity Using AI-Based Model"
+This repo is the official implementation of our work "Identifying Subtypes of Alzheimer’s Disease via AI-Driven Disentanglement of Brain Heterogeneity"
 
 ## Installation
 
