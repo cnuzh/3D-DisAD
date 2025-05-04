@@ -1,0 +1,11 @@
+_target_: src.data.brain_3d_couple_datamodule.Brain3DCoupleDataModule
+data_dir: '/your/path/to/dataset'
+data_types: [ 'MCI','AD' ]
+infinite_data_types: [ 'CN' ]
+info_keys: [ ]
+batch_size: 4
+remove_covar: false
+preprocess: 'uniform'
+num_workers: 4
+pin_memory: False
+cache: false
