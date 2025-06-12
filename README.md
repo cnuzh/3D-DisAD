@@ -1,7 +1,7 @@
 <div align="center">
 
 
-# Identifying Subtypes of Alzheimer’s Disease via AI-Driven Disentanglement of Brain Heterogeneity
+# Identifying Subtypes of Alzheimer’s Disease via Unsupervised Disentanglement of Brain Heterogeneity
 
 
 
